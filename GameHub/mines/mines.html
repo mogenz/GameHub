@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mines Game</title>
+    <link rel="stylesheet" href="/components/styles.css">
+</head>
+<body>
+    <header>
+        <div id="header">
+            <script>
+            fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+            </script>
+        </div>
+        <h1>Mines Game</h1>
+    </header>
+    <main>
+        <div id="mines-board" class="board"></div>
+        <div id="game-log" style="height: 800px; overflow-y: auto; background: #000; color: white;">
+            <h1 id="gamelogheader">Game Log</h1>
+        </div>
+        <aside id="controls">
+            <h2>Balance: <span id="balance">$100.00</span></h2>
+            <div>Potential Reward: <span id="potential-reward">$0.00</span></div>            
+            <label for="board-size">Board Size:</label>
+            <select id="board-size">
+                <option value="5">5x5</option>
+                <option value="nul">Coming soon!</option>
+            </select>
+            <label for="mine-count">Mine Count:</label>
+            <input type="range" id="mine-count" min="1" max="24" value="5">
+            <span id="mine-count-display">5</span>
+            <label for="bet-amount">Bet Amount:</label>
+            <input type="number" id="bet-amount" value="1" min="1" max="100">
+            <button id="start-game">Start Game</button>
+            <button style="display: none;" id="cashout">Cashout</button>
+        </aside>
+    </main>
+    <div id="footer">
+        <script>
+        fetch('/components/footer.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('footer').innerHTML = data);
+        </script>
+    </div>
+    <script src="mines.js"></script>
+    <div id="donate">
+        <script>
+            fetch('/components/donate.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('donate').innerHTML = data);
+            </script>
+    </div>
+</body>
+</html>
