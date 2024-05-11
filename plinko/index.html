@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plinko Game</title>
+    <link rel="stylesheet" href="/components/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Steak!</h1>
+        <h3 id="pickgametitle">Pick a game</h2>
+        <div id="header">
+            <script>
+            fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+            </script>
+        </div>
+    </header>
+    <div id="footer">
+        <script>
+            fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+            </script>
+    </div>
+    <div id="donate">
+        <script>
+            fetch('/components/donate.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('donate').innerHTML = data);
+            </script>
+    </div>
+    <div id="suggestion">
+        <script>
+            fetch('/components/suggestion.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('suggestion').innerHTML = data);
+            </script>
+    </div>
+</body>
+</html>

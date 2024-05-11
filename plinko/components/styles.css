@@ -1,0 +1,270 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+header {
+    justify-content: center;
+    align-items: center;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 80%; /* Adjust based on your layout preference */
+}
+#plinko-board {
+    width: 800px;
+    height: 800px;
+    background-color: #222;
+    display: flex;
+    position: relative;
+}
+#controls {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 8px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+button, select, input {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #666;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover, input:hover, select:hover {
+    background-color: #555;
+}
+label {
+    color: #ccc;
+}
+footer {
+    margin-top: 20px;
+    color: #ccc;
+}
+#drop-chip {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+.navbar a {
+    display: inline-block;
+    border: 3px solid #fff; /* Change the color as needed */
+    padding: 10px 20px; /* Adjust as needed */
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em; /* Make the text bigger */
+    background-color: #333;
+    box-shadow: 0px 5px 0px 0px #222; /* This gives the button a 3D effect */
+    transition: all 0.1s ease-in-out;
+}
+
+.navbar a:hover {
+    background-color: #444;
+    box-shadow: 0px 2px 0px 0px #222;
+    position: relative;
+    top: 3px; /* This makes the button move down when hovered */
+}
+
+.navbar a:active {
+    box-shadow: none;
+    top: 5px; /* This makes the button move down when clicked */
+}
+.peg {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.chip {
+    width: 20px;  
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: yellow; 
+}
+
+.bucket {
+    position: absolute;
+    bottom: 0; 
+    width: calc(1% - 20px); /* Adjust width here */
+    height: 30px; 
+    color: white; 
+    line-height: 30px; 
+    border-radius: 5px; 
+    box-shadow: 0px -2px 5px rgba(0,0,0,0.3); 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin: 1px; /* Adjust space between buckets here */
+}
+
+.chip {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: gold;
+    z-index: 10;
+}
+.column {
+    position: absolute;
+    bottom: 0;
+    width: 5%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+button.active {
+    background-color: #333;
+    color: #ccc;
+}
+
+@keyframes bounce {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.bounce {
+    animation: bounce 0.5s;
+}
+
+@font-face {
+    font-family: 'ZOR';
+    src: url('/fonts/ZOR_____.TTF') type("text/css");
+}
+
+.logo {
+    font-family: 'ZOR';
+    font-size: 60px;
+    color: #ddd;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#pickgametitle {
+    text-align: center; 
+    color:bisque;
+    margin-top:10px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#donate {
+    all: initial;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    color: #333;
+    font-family: Arial, sans-serif;
+    transition: all 0.1s ease-in-out;
+}
+
+#donate:hover {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#donate:active {
+    box-shadow: none;
+    top: 2px;
+}
+
+#suggestion {
+    all: initial;
+    position: fixed;
+    bottom: 20px;
+    right: 140px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    color: #333;
+    font-family: Arial, sans-serif;
+    transition: all 0.1s ease-in-out;
+}
+
+#suggestion:hover {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#suggestion:active {
+    box-shadow: none;
+    top: 2px;
+}
+
+#devnotetitle {
+    text-align: center;
+    color: #ddd;
+    margin-top: 20px;
+}
+
+#devnotedesc {
+    text-align: center;
+    color: #ddd;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.post-details {
+    font-size: 0.8em; 
+    margin-bottom: 20px;
+}
+
+.post-title {
+    font-size: 1.2em; 
+    margin-bottom: 5px;
+    margin-top: 40px;
+}
+
+.post-date {
+    margin-bottom: 5px;
+}
+
+.post-content {
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+#speed-display {
+    text-align: center;
+    margin-top: -20px;
+}

@@ -1,0 +1,31 @@
+[
+    {
+        "title": "01. The beginning",
+        "content": "Today on the 4th of May 2024, i started creating this website because i saw a YouTube short of a guy playing Plinko.\\nI thought it was cool and i wanted to make a website that could simulate the game. I started by creating a simple website with HTML and CSS.\\nThe first game i made was Plinko!",
+        "date": "2024-04-11",
+        "author": "mogens",
+        "separator": "__________________________________________________________________________________________________________________"
+    },
+    {
+        "title": "02. PLINKO!!!!",
+        "content": "During the night of May 5th 2024 i kept my girlfriend awake by creating the full Plinko game. It now fully works with\\n features such as auto drop, difficulty and more...",
+        "date": "2024-05-11",
+        "author": "mogens",
+        "separator": "__________________________________________________________________________________________________________________"
+    },
+    {
+        "title": "03. Continueing the journey",
+        "content": "It is now still the middle of the night i will log off calling it a day after creating a cool website with Plinko and\\na working blog page. Here i will try to update every time i create the website. Pretty good job so far! :)\\nI will definitely try to release this page once it is done!\\n\\nNEXT UP: Mines!!!",
+        "date": "2024-05-11",
+        "author": "mogens",
+        "separator": "__________________________________________________________________________________________________________________"
+    },
+    {
+        "title": "04 Final update for tonight :S",
+        "content": "I didnt go to sleep, BUT NOW I WILL!!! I just quickly added a slider to control the speed of the autodropper.\\nI will now go to sleep and continue tomorrow.\\n\\nNEXT UP ACTUALLY THIS TIME: Mines!!!\\n\\n I also added these cool separators :) Now i am going my girlfriend is going to kill me if i dont go to sleep now.\\n\\nGoodnight! :)",
+        "date": "2024-05-11",
+        "author": "mogens",
+        "separator": "__________________________________________________________________________________________________________________"
+    }
+
+]

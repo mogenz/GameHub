@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plinko Game</title>
+    <link rel="stylesheet" href="/components/styles.css">
+</head>
+<body>
+    <header>
+        <div id="header">
+            <script>
+            fetch('/components/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+            </script>
+        </div>
+    </header>
+    <main>
+        <!-- Plinko board -->
+        <div id="plinko-board"></div>
+
+        <aside>
+            <div id="controls">
+                <!-- Plinko controls -->
+                <h2>Balance: <span id="balance">0.00</span></h2>
+                <label for="auto-mode">Auto Mode (ON/OFF):</label>
+                <input type="checkbox" id="auto-mode">
+                <label for="dropper-speed">Speed:</label>
+                <input type="range" id="dropper-speed" min="1" max="10" value="5">
+                <span id="speed-display">5</span>
+                <label for="ball-value">Ball Value:</label>
+                <input type="number" id="ball-value" value="1" min="1" max="100">
+                <button id="half">0.5x</button>
+                <button id="double">2x</button>
+                <label for="risk">Risk:</label>
+                <select id="risk">
+                    <option value="easy">Easy</option>
+                    <option value="medium" selected>Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+                <button id="drop-chip">Drop Chip</button>
+            </div>
+        </aside>
+    </main>
+    <div id="footer">
+        <script>
+        fetch('/components/footer.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('footer').innerHTML = data);
+        </script>
+    </div>
+    <script src="plinko.js"></script>
+    <div id="donate">
+        <script>
+            fetch('/components/donate.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('donate').innerHTML = data);
+            </script>
+    </div>
+</body>
+</html>
+        
