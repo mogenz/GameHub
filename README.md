@@ -1,6 +1,8 @@
 # 🕹️ Game Hub - A Collection of Classic Games
 
-Welcome to the Game Hub, the ultimate destination for classic game enthusiasts! Here, you can enjoy a growing collection of games, starting with Plinko, Mines, and more to come.
+Welcome to the Game Hub, the ultimate destination for classic game enthusiasts! Here, you can enjoy a growing collection of games, starting with Plinko, Mines, and more to come.  
+
+_I will add new features when i want and will probably end up making this some sort of CV website or sumtn..._
 
 ## 🚀 Getting Started
 
