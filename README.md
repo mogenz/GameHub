@@ -13,52 +13,61 @@ What things you need to install the software and how to install them:
 ```bash
 git clone https://github.com/yourusername/game-hub.git
 cd game-hub
-Installing
+```
+
+
+
+### Installing
 A step by step series of examples that tell you how to get a development environment running:
 
-bash
-Copy code
+```
 npm install
 npm start
+```
 
 
-🎮 Games Available
-Plinko: Test your luck and strategy by dropping balls down the board and watching them land in slots with various point values.
+
+
+## 🎮 Games Available
+Plinko: Test your luck and strategy by dropping balls down the board and watching them land in slots with various point values.  
 Mines: Navigate your way through a minefield, carefully uncovering safe spots and avoiding deadly mines.
 
-🔜 Coming Soon
-Snake: Guide the snake to eat apples while avoiding colliding with itself or the wall.
+
+## 🔜 Coming Soon
+Snake: Guide the snake to eat apples while avoiding colliding with itself or the wall.  
 Additional games will be added regularly.
 
-📝 Dev Notes
+
+## 📝 Dev Notes
 Keep track of development progress and updates here. This section is great for logging thoughts, troubleshooting issues, and marking milestones.
 
-🤝 Contributing
+
+## 🤝 Contributing
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
 
-Fork the Project
-Create your Feature Branch (git checkout -b feature/AmazingFeature)
-Commit your Changes (git commit -m 'Add some AmazingFeature')
-Push to the Branch (git push origin feature/AmazingFeature)
-Open a Pull Request
+
+## Fork the Project
+Create your Feature Branch (git checkout -b feature/AmazingFeature)  
+Commit your Changes (git commit -m 'Add some AmazingFeature')  
+Push to the Branch (git push origin feature/AmazingFeature)  
+Open a Pull Request  
 
 
-📜 License
+## 📜 License
 Distributed under the MIT License. See LICENSE for more information.
 
-📫 How to Reach Me
+## 📫 How to Reach Me
 Feel free to reach out if you have any questions or suggestions:
 
-Email: your-email@example.com
-GitHub: @yourusername
-Twitter: @yourhandle
+Email: couple.simpler.0q@icloud.com  
+GitHub: @mogenz  
+Instagram: @Guntherbb  
 
 
-💖 Acknowledgments
-Hat tip to anyone whose code was used
-Inspiration
-etc
-Enjoy the games, and let the fun begin!
+## 💖 Acknowledgments
+- My girlfriend
+- My procrastination skills
+- prob a lot of other things
 
 
 
