@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plinko Game</title>
+    <title>Mines Game</title>
     <link rel="stylesheet" href="/components/styles.css">
 </head>
 <body>
@@ -15,29 +15,28 @@
             .then(data => document.getElementById('header').innerHTML = data);
             </script>
         </div>
+        <h1>Mines Game</h1>
     </header>
     <main>
-        <div>
-            <h1>Mines</h1>
-            <p>Coming soon...</p>
+        <div id="mines-board" class="board"></div>
+        <div id="game-log" style="height: 800px; overflow-y: auto; background: #000; color: white;">
+            <h1 id="gamelogheader">Game Log</h1>
         </div>
-        <!-- Mines board -->
-        <div id="mines-board"></div>
-        <aside>
-            <!-- Mines controls -->
-            <div id="mines-controls" style="display: none;">
-                <h2>Balance: <span id="balance">0.00</span></h2>
-                <label for="board-size">Board Size:</label>
-                <select id="board-size">
-                    <option value="5">5x5</option>
-                    <option value="10">10x10</option>
-                </select>
-                <label for="mine-count">Mine Count:</label>
-                <input type="number" id="mine-count" value="10" min="1" max="24">
-                <label for="mine-value">Mine Value:</label>
-                <input type="number" id="mine-value" value="10" min="1" max="100">
-                <button id="start-game">Start Game</button>
-            </div>
+        <aside id="controls">
+            <h2>Balance: <span id="balance">$100.00</span></h2>
+            <div>Potential Reward: <span id="potential-reward">$0.00</span></div>            
+            <label for="board-size">Board Size:</label>
+            <select id="board-size">
+                <option value="5">5x5</option>
+                <option value="nul">Coming soon!</option>
+            </select>
+            <label for="mine-count">Mine Count:</label>
+            <input type="range" id="mine-count" min="1" max="24" value="5">
+            <span id="mine-count-display">5</span>
+            <label for="bet-amount">Bet Amount:</label>
+            <input type="number" id="bet-amount" value="1" min="1" max="100">
+            <button id="start-game">Start Game</button>
+            <button style="display: none;" id="cashout">Cashout</button>
         </aside>
     </main>
     <div id="footer">
