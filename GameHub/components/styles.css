@@ -415,3 +415,61 @@ footer {
     color: #ddd;
     margin-top: 200px;
 }
+
+
+
+/* Snake */
+
+#snake-game-container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+    padding: 20px;
+}
+
+#snake-board-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#snake-board {
+    width: 400px;
+    height: 400px;
+    background-color: #000;
+    border: 1px solid #fff;
+    transform: translate3d(0, 0, 0); /* Promote layer to GPU */
+}
+
+#game-log {
+    width: 400px;
+    height: 150px;
+    margin-top: 10px;
+    background-color: #333;
+    color: white;
+    overflow-y: auto;
+    border: 1px solid #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-left: 1px; /* Adjust this value as needed */
+
+}
+
+#controls {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 200px;
+}
+
+#controls > div, #controls label, #controls input, #controls button {
+    margin: 10px 0;
+    width: 100%;
+}
+
+#controls input, #controls button {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}

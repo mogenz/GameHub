@@ -19,6 +19,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function startGame() {
     console.log("Start game clicked");
+    // Debug
+    console.log("Starting game with the following settings:")
+    console.log("Balance: ", balance);
+    console.log("Board size: ", boardSize);
+    console.log("Mine count: ", mineCount);
+    console.log("Potential reward: ", potentialReward);
+
     if (balance <= 0) {
         alert("You don't have enough money to play!");
         return;
@@ -69,6 +76,17 @@ function initializeBoard() {
 
 function handleCellClick() {
     if (!ongoingGame) return; // Prevent interaction if the game isn't active
+    const betAmount = parseFloat(document.getElementById('bet-amount').value);
+    const actualBoardSize = boardSize * boardSize;
+    const numberOfDiamonds = actualBoardSize - mineCount;
+    // Debug    
+    console.log("Balance: ", balance);
+    console.log("Board size: ", boardSize);
+    console.log("Mine count: ", mineCount);
+    console.log("Number of diamonds: ", numberOfDiamonds);
+    console.log("Potential reward: ", potentialReward);
+    console.log("Actual board size: ", actualBoardSize);
+    console.log("Bet amount: ", betAmount);
 
     this.removeEventListener('click', handleCellClick); // Prevent multiple clicks on the same cell
     const hitMine = Math.random() < (mineCount / (boardSize * boardSize));
@@ -82,7 +100,7 @@ function handleCellClick() {
 
     } else {
         this.classList.add('diamond');
-        const reward = parseFloat(document.getElementById('bet-amount').value) * 0.2;
+        const reward = parseFloat(betAmount * (5/numberOfDiamonds));
         potentialReward += reward;
         updateRewardDisplay();
         updateLog(`💎Diamond found!💎 +$${reward.toFixed(2)}`, "green");

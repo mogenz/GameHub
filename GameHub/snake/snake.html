@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="/components/styles.css">
+</head>
+<body>
+    <div id="header">
+        <script>
+        fetch('/components/header.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('header').innerHTML = data);
+        </script>
+    </div>
+    <h1>Snake Game</h1>
+</header>
+    <main>
+        <div id="snake-game-container">
+            <div id="snake-board-container">
+                <canvas id="snake-board"></canvas>
+                <div id="game-log"></div>
+            </div>
+            <div id="controls">
+            <div>Balance: <span id="balance">$100.00</span></div>
+            <div>Potential Reward: <span id="potential-reward">$0.00</span></div>
+            <div>Fruits eaten: <span id="fruits-eaten">0</span><span> 🍎</span></div>
+            <div>Snake length: <span id="snake-length">3</span><span> 🐍</span></div>
+            <label for="bet-amount">Bet Amount:</label>
+            <input type="number" id="bet-amount" value="10" min="1" max="100">
+            <button id="start-game">Start Game</button>
+            <button id="cashout" style="display:none;">Cashout</button>
+        </aside>
+    </main>
+    <footer></footer>
+    <script src="snake.js"></script>
+</body>
+</html>
