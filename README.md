@@ -2,7 +2,7 @@
 
 Welcome to the Game Hub, the ultimate destination for classic game enthusiasts! Here, you can enjoy a growing collection of games, starting with Plinko, Mines, and more to come.  
 
-_I will add new features when i want and will probably end up making this some sort of CV website or sumtn..._
+_I will add new features when i want and will probably end up making this some sort of CV website or sumtn. This readme is made by chatgpt :) 
 
 ## 🚀 Getting Started
 
@@ -64,12 +64,6 @@ Feel free to reach out if you have any questions or suggestions:
 Email: couple.simpler.0q@icloud.com  
 GitHub: @mogenz  
 Instagram: @Guntherbb  
-
-
-## 💖 Acknowledgments
-- My girlfriend
-- My procrastination skills
-- prob a lot of other things
 
 
 
