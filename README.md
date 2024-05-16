@@ -1,4 +1,6 @@
 # 🕹️ Game Hub - A Collection of Classic Games
+_This readme is made by chatgpt :) In this repo i am just adding games to a website whenever im bored :)
+_
 
 Welcome to the Game Hub, the ultimate destination for classic game enthusiasts! Here, you can enjoy a growing collection of games, starting with Plinko, Mines, and more to come.  
 
