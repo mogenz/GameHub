@@ -1,32 +1,24 @@
 # 🕹️ Game Hub - A Collection of Classic Games
-_This readme is made by chatgpt :) In this repo i am just adding games to a website whenever im bored :)
+_This readme is mostly made by chatgpt :) In this repo i am just adding games to a website whenever im bored :)
 _
 
 Welcome to the Game Hub, the ultimate destination for classic game enthusiasts! Here, you can enjoy a growing collection of games, starting with Plinko, Mines, and more to come.  
 
-_I will add new features when i want and will probably end up making this some sort of CV website or sumtn. This readme is made by chatgpt :) 
+_I will add new features when i want and will probably end up making this some sort of CV website or sumtn. 
 
 ## 🚀 Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+These instructions will get you a copy of the project up and running on your local machine if u want... :)
 
 ### Prerequisites
-
-What things you need to install the software and how to install them:
-
-```bash
-git clone https://github.com/yourusername/game-hub.git
-cd game-hub
-```
-
+...
 
 
 ### Installing
-A step by step series of examples that tell you how to get a development environment running:
+...
 
 ```
-npm install
-npm start
+coming_soon
 ```
 
 
@@ -35,26 +27,14 @@ npm start
 ## 🎮 Games Available
 Plinko: Test your luck and strategy by dropping balls down the board and watching them land in slots with various point values.  
 Mines: Navigate your way through a minefield, carefully uncovering safe spots and avoiding deadly mines.
+Snake: Classic Snake game but every fruit has a value to be claimed at any time. Progress for bigger multipliers!
 
 
 ## 🔜 Coming Soon
-Snake: Guide the snake to eat apples while avoiding colliding with itself or the wall.  
-Additional games will be added regularly.
-
-
-## 📝 Dev Notes
-Keep track of development progress and updates here. This section is great for logging thoughts, troubleshooting issues, and marking milestones.
-
-
-## 🤝 Contributing
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
-
-
-## Fork the Project
-Create your Feature Branch (git checkout -b feature/AmazingFeature)  
-Commit your Changes (git commit -m 'Add some AmazingFeature')  
-Push to the Branch (git push origin feature/AmazingFeature)  
-Open a Pull Request  
+Double or nothing.
+Coinflip. 
+Multiplication-thingy. 
+Crash. 
 
 
 ## 📜 License
