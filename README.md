@@ -26,7 +26,9 @@ coming_soon
 
 ## 🎮 Games Available
 Plinko: Test your luck and strategy by dropping balls down the board and watching them land in slots with various point values.  
+
 Mines: Navigate your way through a minefield, carefully uncovering safe spots and avoiding deadly mines.
+
 Snake: Classic Snake game but every fruit has a value to be claimed at any time. Progress for bigger multipliers!
 
 
